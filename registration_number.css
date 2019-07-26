@@ -1,0 +1,65 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: 5px solid white;
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+label{
+    font: 20px arial, sans-serif;
+    font-weight: bold;
+    margin-right: 1em;
+    padding: 0.5em;
+}
+
+
+.regNum{
+    display: flex;
+    justify-content: center;
+}
+
+.addBtn{
+    display: block;
+     margin: auto; 
+    font-size: 1em; 
+
+}
+
+.showBtn{
+    display: block;
+     margin: auto; 
+    font-size: 1em; 
+}
+
+.col-12{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.places{
+    display: flex;
+    justify-content: center;
+    
+}
+
+span{
+    font: 15px arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.5em;
+}
+
+li {
+    border-radius: 25px;
+    border: 4px solid black;
+    background: yellow;
+    padding: 20px; 
+    width: 70px; 
+    height: 5px; 
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="registration_number.css">
+    <link rel="stylesheet" href="simple-grid.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-12">
+            <h1>Registration Number List</h1>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="regNum">
+                <label>Registration Number:</label>
+                <input type="text" id="enter" placeholder="Enter registration no." name="textHolder" value="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="addBtn" onclick="addItems()" value="ADD">ADD</button>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="msg">
+            <!-- Please Enter Registration Number -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="places">
+                <label>
+                    <span>
+                        <input type="radio" class="radioType" name="myPlace" value="Cape Town">Cape Town
+                    </span>
+
+                    <span>
+                        <input type="radio" class="radioType" name="myPlace" value="Stellenbosch">Stellenbosch
+                    </span>
+
+                    <span>
+                        <input type="radio" class="radioType" name="myPlace" value="Paarl">Paarl
+                    </span>
+
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="btn" class="showBtn" value="SHOW">SHOW</button>
+        </div>
+    </div>
+
+     <!-- <h5>Display Registration Numbers</h5> -->
+
+    <div class="row">
+        <div class="col-12">
+            <ul id="diplayReg" style="list-style:none"></ul> 
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script src="registration_number.js"></script>
+
+<script src="registration_number-dom.js"></script>
