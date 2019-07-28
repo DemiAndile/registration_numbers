@@ -31,7 +31,7 @@
 
     <div class="row">
         <div class="col-12">
-            <button type="button" class="addBtn" onclick="addItems()" value="ADD">ADD</button>
+            <button type="button" class="addBtn" value="ADD">ADD</button>
         </div>
     </div>
 
@@ -46,15 +46,19 @@
             <div class="places">
                 <label>
                     <span>
-                        <input type="radio" class="radioType" name="myPlace" value="Cape Town">Cape Town
+                        <input type="radio" class="radioType" name="myPlace" value="CA">Cape Town
                     </span>
 
                     <span>
-                        <input type="radio" class="radioType" name="myPlace" value="Stellenbosch">Stellenbosch
+                        <input type="radio" class="radioType" name="myPlace" value="CY">Stellenbosch
                     </span>
 
                     <span>
-                        <input type="radio" class="radioType" name="myPlace" value="Paarl">Paarl
+                        <input type="radio" class="radioType" name="myPlace" value="CL">Paarl
+                    </span>
+
+                    <span>
+                        <input type="radio" class="radioType" name="myPlace" value="All">All
                     </span>
 
                 </label>
@@ -72,16 +76,15 @@
 
     <div class="row">
         <div class="col-12">
-            <ul id="diplayReg" style="list-style:none"></ul> 
+            <ul id="displayReg" class="hidden" style="list-style:none"></ul> 
         </div>
     </div>
 
+<script src="./registration_number.js"  charset="utf-8"></script>
+<script src="./registration_number-dom.js" charset="utf-8"></script>
 
 
 </body>
 
 </html>
 
-<script src="registration_number.js"></script>
-
-<script src="registration_number-dom.js"></script>
