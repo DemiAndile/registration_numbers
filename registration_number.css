@@ -58,6 +58,7 @@ span{
 li {
     border-radius: 25px;
     border: 4px solid black;
+    margin-bottom: 0.5em;
     background: yellow;
     padding: 20px; 
     width: 70px; 
