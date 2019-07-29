@@ -1,71 +1,77 @@
 function FactoryRegistration() {
     var regNumber = [];
-    var CapeTown = [];
-    var Paarl = [];
-    var stelli = [];
+     var capeTown = [];
+    // var paarl = [];
+    // var stelli = [];
 
-    let get;
+     let get ;
 
-    function addList(reg) {
-        getPlates = reg;
+    function addList(reg){
+         get = reg;
         regNumber.push(reg)
-        // if(!regNumber.includes(reg)){
-        //     regNumber.push(reg)
+    }
+        // function displayAll(){
+        //     return regNumber
         // }
-    }
 
-    function all(){
-        return regNumber;
-    }
-
-    function regNo() {
-        for (i = 0; i < reNumber.length; i++) {
-            if (regNumber.startsWith("CA")) {
-                CapeTown.push(regNumber[i])
-            }
+      
+       // console.log(capeTown)
+        function cpRegNo(){
+            // return capeTown;
         }
-        return CapeTown
-    }
 
-    function addreg() {
-        for (i = 0; i < reNumber.length; i++) {
-            if (regNumber.startsWith("GP")) {
-                Paarl.push(regNumber[i])
-            }
-        }
-        return paarl;
-    }
 
-    function regList() {
-        for (i = 0; i < reNumber.length; i++) {
-            if (regNumber.startsWith("CY")) {
-                stelli.push(regNumber[i])
-            }
-        }
-        return paarl;
-    }
+        // function paarlReg(){
+        //     for (i=0; i< regNumber.length; i++) {
+        //         if (regNumber.startsWith("GP")) {
+        //             paarl.push(regNumber[i])
+        //         }
+        //     }
+        //     return Paarl;
+        // }
+
+        // function stelliReg(){
+        //     for (i=0; i < regNumber.length; i++) {
+        //         if (regNumber.startsWith("CY")) {
+        //             stelli.push(regNumber[i])
+        //         }
+        //     }
+        //     return Stellenbosch;
+        // }
+
 
     function getRegistration() {
         return regNumber;
     }
 
-    function getOnlyOne() {
-        return getPlates;
+    function getOnlyOne(){
+        return get
     }
 
-    // console.log(regNumber);
-
-    return {
-        addList,
-        getRegistration,
-        getOnlyOne,
-        regNo,
-        addreg,
-        regList,
-        all
-
-
+    function cpReg(){
+        console.log("*******")
+        for (i=0; i< regNumber.length; i++) {
+            var capeReg = regNumber[i]
+            if (capeReg.startsWith("ca")) {
+                capeTown.push(capeReg)
+            }
+        }
+        console.log(capeTown)
+         return capeTown
     }
+
+        // regNumber.push(reg)
+        // console.log(regNumber) 
+return{
+    addList,
+    getRegistration,
+    // displayAll,
+    cpReg,
+    // paarlReg,
+    // stelliReg,
+    getOnlyOne,
+    cpRegNo,
+  }
 
 }
 

@@ -61,6 +61,12 @@ li {
     margin-bottom: 0.5em;
     background: yellow;
     padding: 20px; 
-    width: 70px; 
+    width: 10em; 
     height: 5px; 
+    display : block;
   }
+
+  /* .hidden {
+    display:none;
+     }
+   */
