@@ -5,18 +5,17 @@ var showBtnElem = document.querySelector(".showBtn");
 // var displayRegElem = document.querySelector("#displayReg");
 var currentDiv = document.getElementById("displayReg");
 
+
+// if (localStorage['reg'] !== undefined){
+//     var nameStored = JSON.parse(localStorage['reg']); 
+// }
+// else {
+//     nameStored = {};
+// }
+
 var registration = FactoryRegistration();
 
-var registrations = FactoryRegistration();
-
 function addItems() {
-
-    // var ul = document.getElementById("diplayReg");
-    // var  enter = document.getElementById("enter");
-    // var  li = document.createElement("li");
-    // li.setAttribute('id',enter.value);
-    // li.appendChild(document.createTextNode(enter.value))
-    // ul.appendChild(li);
 
     if (enterText.value != "") {
         registration.addList(enterText.value);
@@ -51,11 +50,19 @@ function addItems() {
             liElem[i].style.display = "none";
         }
     }
+
     }
-
-
-
 
 showBtnElem.addEventListener('click', showTown)
 addBtnElem.addEventListener('click', addItems)
 
+
+
+
+
+// var ul = document.getElementById("diplayReg");
+    // var  enter = document.getElementById("enter");
+    // var  li = document.createElement("li");
+    // li.setAttribute('id',enter.value);
+    // li.appendChild(document.createTextNode(enter.value))
+    // ul.appendChild(li);

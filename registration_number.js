@@ -1,82 +1,95 @@
 function FactoryRegistration() {
     var regNumber = [];
-     var capeTown = [];
-    // var paarl = [];
-    // var stelli = [];
 
-     let get ;
+    let get;
 
-    function addList(reg){
-         get = reg;
-        regNumber.push(reg)
-    }
-        // function displayAll(){
-        //     return regNumber
-        // }
+    function addList(reg) {
+        var number = reg.toUpperCase();
+        get = number;
 
-      
-       // console.log(capeTown)
-        function cpRegNo(){
-            // return capeTown;
+        if (regNumber[reg] === undefined) {
+            regNumber.push(reg);
         }
+    }
+
+    function allTowns() {
+        var allReg = [];
+        for (let i = 0; i < regNumber.length; i++) {
+
+            var registrations = regNumber[i]
+
+            if (registrations.startsWith("CA")) {
+                allReg.push(registrations)
+            }
+            else if (registrations.startsWith("CJ")) {
+                allReg.push(registrations)
+            }
+            else if (registrations.startsWith("CL")) {
+                allReg.push(registrations)
+            }
+        }
+        return allReg
+    }
 
 
-        // function paarlReg(){
-        //     for (i=0; i< regNumber.length; i++) {
-        //         if (regNumber.startsWith("GP")) {
-        //             paarl.push(regNumber[i])
-        //         }
-        //     }
-        //     return Paarl;
-        // }
-
-        // function stelliReg(){
-        //     for (i=0; i < regNumber.length; i++) {
-        //         if (regNumber.startsWith("CY")) {
-        //             stelli.push(regNumber[i])
-        //         }
-        //     }
-        //     return Stellenbosch;
-        // }
-
+    function displayAll() {
+        return regNumber
+    }
 
     function getRegistration() {
         return regNumber;
     }
 
-    function getOnlyOne(){
+    function getOnlyOne() {
         return get
     }
 
-    function cpReg(){
-        console.log("*******")
-        for (i=0; i< regNumber.length; i++) {
-            var capeReg = regNumber[i]
-            if (capeReg.startsWith("ca")) {
-                capeTown.push(capeReg)
-            }
-        }
-        console.log(capeTown)
-         return capeTown
-    }
 
-        // regNumber.push(reg)
-        // console.log(regNumber) 
-return{
-    addList,
-    getRegistration,
-    // displayAll,
-    cpReg,
-    // paarlReg,
-    // stelliReg,
-    getOnlyOne,
-    cpRegNo,
-  }
+    return {
+        addList,
+        getRegistration,
+        displayAll,
+        allTowns,
+        //cpReg,
+        //paarlReg,
+        // stelliReg,
+        getOnlyOne,
+    }
 
 }
 
 
 
+// function cpReg(){
+//     var capeTown = [];
+//     for (let i=0; i< regNumber.length; i++) {
+//         var capeReg = regNumber[i]
+//         if (capeReg.startsWith("CA")) {
+//             capeTown.push(capeReg)
+//         }
+//     }
+//      return capeTown
+// }
+
+// function paarlReg(){
+//     var paarl = [];
+//     for (let i=0; i< regNumber.length; i++) {
+//         if (regNumber[i].startsWith("CJ")) {
+//             paarl.push(regNumber[i])
+//         }
+//     }
+//     return paarl;
+// }
+
+// function stelliReg(){
+//     var stelli = [];
+//     for (let i=0; i < regNumber.length; i++) {
+//         if (regNumber[i].startsWith("CL")) {
+//             stelli.push(regNumber[i])
+//         }
+//     }
+//     return Stellenbosch;
+// }
 
 
 
@@ -97,3 +110,12 @@ return{
     //     }
     // }
 
+
+    //define a method that take two arguments which is reg and towns
+        // defineempty arry to store filtered registrtions
+        // check if town == all towns
+            // return all registratons
+        // loop through the list of registrations
+        // check if current reg starts with town
+            // push into empty array 
+        // return empty array 
